@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
+  // Armazenar a lista de serviços
   const [servicos, setServicos] = useState([]);
+  // Armazenar o nome do serviço em edição
   const [servicoNome, setServicoNome] = useState('');
+  // Armazenar a descrição do serviço em edição
   const [servicoDescricao, setServicoDescricao] = useState('');
+  // Armazenar o índice do serviço em edição
   const [editandoIndex, setEditandoIndex] = useState(null);
 
+  // Adiciona um novo serviço
   const addServico = () => {
     if (servicoNome && servicoDescricao) {
       setServicos([...servicos, { nome: servicoNome, descricao: servicoDescricao }]);
@@ -15,12 +20,14 @@ const App = () => {
     }
   };
 
+  // Inicia a edição de um serviço existente
   const editarServico = (index) => {
     setServicoNome(servicos[index].nome);
     setServicoDescricao(servicos[index].descricao);
     setEditandoIndex(index);
   };
 
+  // Salva as alterações de um serviço editado
   const saveServico = () => {
     if (servicoNome && servicoDescricao && editandoIndex !== null) {
       const updatedServicos = servicos.map((servico, index) =>
@@ -33,6 +40,7 @@ const App = () => {
     }
   };
 
+  // Exclui um serviço existente
   const deletarServico = (index) => {
     setServicos(servicos.filter((_, i) => i !== index));
   };
