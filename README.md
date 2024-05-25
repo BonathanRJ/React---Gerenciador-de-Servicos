@@ -12,5 +12,5 @@ Trabalho da matéria de Desenvolvimento de Aplicações com Móveis
 # Apresentação
 ![gerenciador_print](https://github.com/BonathanRJ/React---Gerenciador-de-Servicos/assets/97456370/fad3234c-fe99-4097-a9a3-c541f271f85b)
 
-### OBS* clique no gif para melhor qualidade!)
+### Clique no gif para melhorar a qualidade!
 ![Apresentacao_dev_web](https://github.com/BonathanRJ/React---Gerenciador-de-Servicos/assets/97456370/29fac863-0f82-4ba6-a1e9-c0e9c6e4535f)
